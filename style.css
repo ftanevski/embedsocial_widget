@@ -1,0 +1,64 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+.container{
+    background-color: #EEE;
+    border: solid black 1px;
+    overflow: visible;
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        column-count: 1;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .container{
+        column-count: 2;
+    }
+}
+@media screen and (min-width: 993px){
+    .container{
+        column-count: 4;
+    }
+}
+.profileImage{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.captionImage{
+    margin-top: 1rem;
+    width: 100%;
+}
+#card{
+    padding: 1rem;
+    border: gray solid 1px;
+    margin: 1rem;
+    display: inline-block;
+}
+
+.social{
+    justify-content: flex-end;
+}
+.heartIcon{
+    margin-top: 2rem;
+}
+hr{
+    width: 100%;
+    opacity: 0.2;
+}
+.likes{
+    display: inline-flex;
+    float: initial;
+}
+#cardHeader{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+#cardImage{
+    height: 100%;
+}
